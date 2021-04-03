@@ -8,14 +8,12 @@
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^24.9.1",
     "@types/node": "^12.12.29",
-    "@types/palx": "^1.0.1",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
-    "palx": "^1.0.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-icons": "^3.9.0",
-    "react-scripts": "3.4.0",
+    "react-scripts": "^4.0.3",
     "typescript": "^3.7.5"
   },
   "scripts": {
@@ -23,9 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "css": "tachyons src/css/app.css > src/index.css --minify",
-    "prestart": "npm run css",
-    "prebuild": "npm run css"
+    "scss": "tachyons src/scss/app.scss > src/scss/build.minified.css --minify",
+    "prestart": "npm run scss",
+    "prebuild": "npm run scss"
   },
   "eslintConfig": {
     "extends": "react-app"
